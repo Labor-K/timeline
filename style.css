@@ -8,6 +8,9 @@
   display:none !important;
 }
 
+sup{
+  line-height:0px;
+}
 
 .tl-timenav {
   width: 100%;
@@ -370,7 +373,7 @@
 }
 .tl-timeline p a:hover,
 .tl-timeline p a:focus {
-  color: #c34528;
+  color: #FA0F0C;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .tl-timeline p a {
@@ -380,7 +383,7 @@
   }
   .tl-timeline p a:hover,
   .tl-timeline p a:focus {
-    color: #c34528;
+    color: #FA0F0C;
     text-decoration: underline;
   }
 }
@@ -394,11 +397,11 @@
 }
 .tl-timeline a {
   text-decoration: none;
-  color: #c34528;
+  color: #FA0F0C;
 }
 .tl-timeline a:hover {
   text-decoration: underline;
-  color: #6e2717;
+  color: #FA0F0C;
 }
 .tl-timeline .tl-caption,
 .tl-timeline .tl-credit,
@@ -497,7 +500,7 @@
 }
 .tl-timeline .vcard a:hover .fn,
 .tl-timeline .vcard a:hover .nickname {
-  color: #c34528;
+  color: #FA0F0C;
 }
 .tl-timeline .vcard .fn,
 .tl-timeline .vcard .nickname {
@@ -540,7 +543,7 @@
 }
 .tl-timeline .tl-button-calltoaction .tl-button-calltoaction-text {
   display: inline-block;
-  background-color: #c34528;
+  background-color: #FA0F0C;
   color: #fff;
   padding: 10px 15px 10px 15px;
   border-radius: 7px;
@@ -666,10 +669,10 @@
   content: "\e630";
 }
 .tl-icon-zoom-in:after {
-  content: url(zoomIn.png);
+  content: url(zoom-in.svg);
 }
 .tl-icon-zoom-out:after {
-  content: url(zoomIn.png);
+  content: url(zoom-out.svg);
 }
 .tl-icon-list:after {
   content: "\e633";
@@ -711,7 +714,7 @@
   content: "\e63d";
 }
 .tl-icon-goback:after {
-  content: url(refresh.png);
+  content: url(refresh.svg);
 }
 .tl-icon-doc-v2:after {
   content: "\e63f";
@@ -792,7 +795,7 @@
   position: absolute;
   z-index: 11;
   text-align: center;
-  color: #333;
+  /* color: #333; */
   overflow: hidden;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -879,7 +882,7 @@
   opacity: 0.33;
 }
 .tl-menubar-button:hover {
-  background: #333;
+  background: #f6f6f6;
   color: #FFF;
 }
 .tl-menubar-button:hover.tl-menubar-button-inactive {
@@ -894,7 +897,7 @@
   color: #737373;
 }
 .tl-mobile .tl-menubar-button:active {
-  background: #c34528;
+  background: #FA0F0C;
   color: #FFF;
 }
 @keyframes invertToBlack {
@@ -1068,7 +1071,7 @@
   text-decoration: none;
 }
 .tl-timenav .tl-attribution a:hover .tl-knightlab-logo {
-  background-color: #c34528;
+  background-color: #FA0F0C;
 }
 .tl-timenav .tl-attribution .tl-knightlab-logo {
   display: inline-block;
@@ -1076,7 +1079,7 @@
   height: 8px;
   width: 8px;
   margin-right: 3px;
-  background-color: #c34528;
+  background-color: #FA0F0C;
   background-color: #cccccc;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1104,7 +1107,7 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #c34528;
+  color: #FA0F0C;
   font-size: 32px;
   line-height: 32px;
   position: absolute;
@@ -1264,7 +1267,7 @@
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid #000000;
   z-index: 5;
   content: " ";
   position: absolute;
@@ -1286,7 +1289,7 @@
   bottom: 0px;
   height: 6px;
   width: 6px;
-  background-color: #919191;
+  background-color: #000000;
   z-index: 8;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1639,7 +1642,7 @@
   opacity: 1;
 }
 .tl-timeera.tl-timeera-color0 .tl-timeera-background {
-  background-color: #c34528;
+  background-color: #FA0F0C;
 }
 .tl-timeera.tl-timeera-color1 .tl-timeera-background {
   background-color: #28a6c3;
@@ -1948,7 +1951,7 @@
   width: 100%;
   height: 100%;
   padding: 0px;
-  margin: 0px;
+margin:0;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -2002,8 +2005,11 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-.tl-slide .tl-slide-content-container .tl-slide-content .tl-text {
-  width: 50%;
+
+/* WITH CAPTION CHECK
+ */
+ .tl-slide .tl-slide-content-container .tl-slide-content .tl-text {
+  width: 90%;
   max-width: 50%;
   min-width: 120px;
   padding: 0 20px 0 20px;
@@ -2086,7 +2092,7 @@
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
   text-decoration: underline;
-  color: #c34528;
+  color: #FA0F0C;
 }
 .tl-slide.tl-full-image-background .tl-caption,
 .tl-slide.tl-full-color-background .tl-caption,
@@ -2298,10 +2304,10 @@
 .tl-slidenav-next .tl-slidenav-description {
   font-size: 11px;
   margin-top: 5px;
-  filter: alpha(opacity=0);
-  -khtml-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
+  filter: alpha(opacity=1);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 .tl-slidenav-previous .tl-slidenav-description small,
 .tl-slidenav-next .tl-slidenav-description small {
@@ -2353,10 +2359,10 @@
   margin-left: 20px;
 }
 .tl-slidenav-next .tl-slidenav-icon {
-  margin-left: 76px;
+  margin-left: 10px;
 }
 .tl-slidenav-next .tl-slidenav-icon:before {
-  content: "\e64f";
+  content: url(left.svg);
 }
 .tl-slidenav-previous {
   text-align: left;
@@ -2366,7 +2372,7 @@
   margin-left: 0px;
 }
 .tl-slidenav-previous .tl-slidenav-icon:before {
-  content: "\e650";
+  content: url(right.svg);
 }
 /* NAVIGATION HOVER
 ================================================== */
@@ -2385,10 +2391,9 @@
   opacity: 0.5;
 }
 .tl-slidenav-next:hover .tl-slidenav-icon {
-  margin-left: 80px;
+  margin-left: 4px;
 }
 .tl-slidenav-previous:hover .tl-slidenav-icon {
-  margin-left: -4px;
 }
 .tl-skinny .tl-slidenav-next {
   right: 32px;
@@ -2568,14 +2573,16 @@
   min-width: 50%;
   height: 100%;
   float: left;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 400px !important;
   position: relative;
 }
 .tl-media .tl-media-content-container.tl-media-content-container-text {
   border-right: 1px solid #e6e6e6;
   padding-right: 20px;
+
 }
+
+
 .tl-media .tl-media-content-container .tl-media-content {
   position: relative;
 }
@@ -2615,13 +2622,13 @@
 }
 /* Media Shodow
 ================================================== */
-.tl-media-shadow {
+/* .tl-media-shadow {
   position: relative;
   z-index: 1;
   -webkit-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
-}
+} */
 .tl-slide.tl-full-image-background a,
 .tl-slide.tl-full-color-background a,
 .tl-slide.tl-full-image-background .vcard a,
@@ -2632,18 +2639,18 @@
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
   text-decoration: underline;
-  color: #c34528;
+  color: #FA0F0C;
 }
 /* Credit
 ================================================== */
 .tl-credit {
   color: #999999;
-  text-align: right;
+  text-align: left;
   display: block;
   margin: 0 auto;
   margin-top: 6px;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 9px;
+  line-height: 12px;
 }
 /* Caption
 ================================================== */
@@ -2653,8 +2660,8 @@
   margin-left: auto;
   margin-top: 10px;
   color: #666666;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 8px !important;
+  line-height: 11px !important;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
 }
@@ -2781,7 +2788,7 @@
 .tl-full-image-background .tl-text p a:hover,
 .tl-full-color-background .tl-text p a:hover {
   text-decoration: underline;
-  color: #c34528;
+  color: #FA0F0C;
 }
 /* Skinny
 ================================================== */
@@ -3005,7 +3012,7 @@
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia a:hover,
 .tl-slide.tl-full-color-background .tl-media .tl-media-wikipedia a:hover {
   text-decoration: underline;
-  color: #c34528;
+  color: #FA0F0C;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia .tl-wikipedia-title,
 .tl-slide.tl-full-color-background .tl-media .tl-media-wikipedia .tl-wikipedia-title {
@@ -3078,7 +3085,7 @@
 .tl-slide.tl-full-image-background .tl-media .tl-media-website a:hover,
 .tl-slide.tl-full-color-background .tl-media .tl-media-website a:hover {
   text-decoration: underline;
-  color: #c34528;
+  color: #FA0F0C;
 }
 .tl-mobile.tl-skinny .tl-media .tl-media-website {
   margin-left: 10px;
